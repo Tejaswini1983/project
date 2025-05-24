@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      display: inline;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .hero {
+      background: #0077cc;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    .about,
+    .contact,
+    .projects {
+      background: #fff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: #0077cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        float: none;
+        text-align: center;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm John Doe</h2>
+    <p>Web Developer | Designer | Freelancer</p>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate web developer with experience in HTML, CSS, JavaScript, and React.
+      I love creating modern and responsive web applications that solve real-world problems.
+    </p>
+    <p>
+      When I'm not coding, you can find me reading, exploring new tech, or traveling.
+    </p>
+  </section>
+
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Responsive blog website using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>E-commerce website built with React and Firebase.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Portfolio website (this one!) showcasing my skills and work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 John Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
